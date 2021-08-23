@@ -61,3 +61,23 @@
           "
         />
         <div
+          class="card-body shadow p-3 mb-5 rounded"
+          style="background-color: rgba(232, 253, 255, 0.705)"
+        >
+          <h3 class="card-title" style="color: #007bff; font-weight: bold">
+            {{ profile?.name }}
+          </h3>
+          <h6 class="card-text" style="font-weight: bolder">
+            {{ profile?.bio }}
+          </h6>
+          <a
+            href="{{ profile?.html_url }}"
+            target="_blank"
+            class="btn btn-danger"
+            >Github</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
