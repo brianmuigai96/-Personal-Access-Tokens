@@ -79,65 +79,61 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="container-fluid">
-  <div class="container">
-    <div
-      class="allrepos"
-      style="display: flex; flex-wrap: wrap; justify-content: space-around"
-    >
-      <div class="card" class="repo">
+    <div class="container-fluid">
+      <div class="container">
         <div
-          class="card-body shadow p-3 mb-5 rounded bg-white"
-          *ngFor="let repo of repos"
+          class="allrepos"
+          style="display: flex; flex-wrap: wrap; justify-content: space-around"
         >
-          <h5
-            class="card-title"
-            style="color: #007bff; font-weight: bolder"
-          >
-            Repo Name: &nbsp;{{ repo.name }}
-          </h5>
-          <div class="card-text">
-            <hr />
-            <div class="desc" style="font-weight: bolder">
-              <span class="top">Description:</span> &nbsp;{{
-                repo.description
-              }}
+          <div class="card" class="repo">
+            <div
+              class="card-body shadow p-3 mb-5 rounded bg-white"
+              *ngFor="let repo of repos"
+            >
+              <h5
+                class="card-title"
+                style="color: #007bff; font-weight: bolder"
+              >
+                Repo Name: &nbsp;{{ repo.name }}
+              </h5>
+              <div class="card-text">
+                <hr />
+                <div class="desc" style="font-weight: bolder">
+                  <span class="top">Description:</span> &nbsp;{{
+                    repo.description
+                  }}
+                </div>
+                <hr />
+                <div class="card-subtitle mb-2">
+                  <span class="top">Language: </span> {{ repo.language }}
+                </div>
+                <div class="card-subtitle mb-2">
+                  <span class="top">Created On:</span> &nbsp;{{
+                    repo.created_at | date
+                  }}
+                </div>
+              </div>
             </div>
-            <hr />
-            <div class="card-subtitle mb-2">
-              <span class="top">Language: </span> {{ repo.language }}
-            </div>
-            <div class="card-subtitle mb-2">
-              <span class="top">Created On:</span> &nbsp;{{
-                repo.created_at | date
-              }}
+            <div class="card-footer">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Third group"
+              ></div>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Third group"
+              ></div>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Third group"
+              ></div>
             </div>
           </div>
-        </div>
-        <div class="card-footer">
-          <div
-            class="btn-group"
-            role="group"
-            aria-label="Third group"
-          ></div>
-          <div
-            class="btn-group"
-            role="group"
-            aria-label="Third group"
-          ></div>
-          <div
-            class="btn-group"
-            role="group"
-            aria-label="Third group"
-          ></div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </div>
