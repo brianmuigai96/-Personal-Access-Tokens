@@ -1,0 +1,36 @@
+<div id="header">
+  <ul class="nav justify-content-center">
+    <h1 style="font-size: 50px; font-weight: bold">GitSearch</h1>
+  </ul>
+</div>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card-header shadow p-3 mb-5 bg-white rounded"></div>
+        <div class="card-body" style="background-color: white">
+          <form class="form-inline">
+            <div class="form-group">
+              <input
+                [(ngModel)]="githubUserQuery"
+                name="user"
+                size="40"
+                type="search"
+                class="form-control"
+              />
+            </div>
+            <div>
+              <input
+                style="margin-left: 10%"
+                type="submit"
+                value="search"
+                class="btn btn-primary btn-sm"
+                (click)="getUser()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
